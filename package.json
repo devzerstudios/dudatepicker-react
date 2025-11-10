@@ -1,0 +1,54 @@
+{
+  "name": "dudatepicker-react",
+  "version": "0.1.0",
+  "description": "React + TS wrapper/components for duDatepicker with Tailwind/shadcn styling",
+  "license": "MIT",
+  "author": "Your Name",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "datepicker",
+    "react",
+    "typescript",
+    "tailwind",
+    "shadcn",
+    "nextjs",
+    "duDatepicker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "dudatepicker-react"
+  }
+}
